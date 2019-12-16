@@ -147,5 +147,30 @@ all of its dependencies are notified and updated automatically."
   #### negatives
   * restricts to n amount of objects to be create
   * Restricting object creation is not a good practice
-
- 
+  
+  # Command Pattern
+  Definition: “Encapsulate a request as an object, thereby
+              letting you parameterize clients with different
+              requests, queue or log requests, and support
+              undo-able operations.”
+  
+  #### Problem command pattern is addressing
+  * Need to issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
+  * You want to encapsulate groups of commands that
+    control certain functionalities/behaviors together so
+    that all of the details about sequence of commands
+    are hidden from the client-side by encapsulating
+    method invocation. 
+  
+  #### Solution
+  definition. Encapsulate the request as an object in order to hide the behaivor of the request from the client.
+  Supports different types of request and undo operations.
+  
+  #### Benefits
+  * Flexible enough to add new commands to be executed
+  * Decouples the invoker from the execution method
+  * Easy to transport Commands
+  
+  #### Negatives
+  * an large of amount of classes and objects can be created 
+  * if implemented incorrectly, simple becomes an Facade implementation
