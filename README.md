@@ -130,5 +130,22 @@ all of its dependencies are notified and updated automatically."
  * Decorator class and the the class that are being wrapped are not identical. 
  * Copious amounts of smaller classes are created. 
  
+ # Singleton
+  Definition: "Creational design pattern that ensures a class has only one instances and provides global access to it."
+  
+  #### The problem it address
+  We want to create an instance of that class once, and refer to that instance throughout the application
+  
+  #### solution
+  Make the constructor of the class private and return a the value from the getter for that class instance
+  
+  #### benefits
+  * Controlled access to the same instance
+  * Avoid dubious amounts of code
+  * Singleton can be sub-classed
+  
+  #### negatives
+  * restricts to n amount of objects to be create
+  * Restricting object creation is not a good practice
 
  
