@@ -57,7 +57,21 @@ all of its dependencies are notified and updated automatically."
  * mediator -> sends information between other objects 
  
  # Factory Method
- Definition: 
+ Definition: "a creational pattern that uses factoryMethod methods to deal with the 
+ problem of creating objects without having to specify the exact class of the object that will be created."
+ 
+ #### What problem does Factory method address?
+ We need need to create an object at runtime based on a set of conditions without have to hard code that object
+ 
+ #### What is the solution?
+ Create a factoryMethod class that is responsible for creating the object depending on the certain conditions
+ that are required for each object
+ 
+ #### Benefits 
+ * Very flexible, code is more robust, less coupled, and easier to extend
+ * The object doesn't need to know how to create itself
+ 
+ #### Negatives 
  
  # Abstract Factory
  Definition: 
