@@ -91,5 +91,27 @@ all of its dependencies are notified and updated automatically."
  * adding new objects to create may require the change of the abstract factory class 
  and all of its subclasses.
  
+ # adapter Pattern
+ Definition: a wrapper pattern that allows the interface of an existing class to be used as another interface.
+ lets classes work together that couldn't otherwise because of incompatible interfaces. 
+ 
+ #### Problem adapter addresses
+ When there are incompatible interfaces between types of class so we have to bridge/connect them by creating an adapter interface
+ 
+ #### Solution 
+ adapter classes converts the interface of one class into a new adapter interface that the clients expect to have
+ 
+ #### Benefits
+ * lets a single adpater interface work with many Adaptee classes/interfaces
+ * the adapter class can add functionality to the adaptee classes all at once
+ 
+ #### Negatives
+ * The adapter refers to the subclass rather than the interface itself
+ * referring to the interface would be more flexible
+ 
+ #### similar patterns
+ * Decorator -> an example of a wrapper pattern
+ * proxy -> a layer of giving access to the object
+ 
  
  
