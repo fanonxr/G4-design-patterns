@@ -174,3 +174,37 @@ all of its dependencies are notified and updated automatically."
   #### Negatives
   * an large of amount of classes and objects can be created 
   * if implemented incorrectly, simple becomes an Facade implementation
+  
+  # Composite Pattern
+  Definition: "Compose objects into tree structures to represent
+              part-whole hierarchies. Composite lets clients treat individual
+              objects and compositions of objects uniformly."
+              
+  #### what problem does it address
+  When you have very similar objects that can be represented in a tree structure. 
+  
+  
+  #### Solution composite provides
+  
+  * Component – Component declares the interface for objects in the composition and for accessing and managing its child components. It also implements default behavior for the interface common to all classes as appropriate.
+  * Leaf – Leaf defines behavior for primitive objects in the composition. It represents leaf objects in the composition.
+  * Composite – Composite stores child components and implements child related operations in the component interface.
+  * Client – Client manipulates the objects in the composition through the component interface.
+  
+  * Composite Pattern should be used when clients need to ignore the difference between compositions of objects and individual objects.
+ 
+  
+  #### Benefits
+  * Extremely easy to add new components to the composition
+  * It can make your design overly general. It is harder to restrict the
+    components of a composite. -> when you want the composition to have certain components
+  * It defines class hierarchies consisting of primitive objects and
+    composite objects.
+  
+  #### negatives
+  * can be an large amount of forward to the child objects within the composition. 
+  
+  #### similar patterns
+  * Decorator 
+  * Iterator
+  * visitor 
