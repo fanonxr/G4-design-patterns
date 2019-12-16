@@ -74,4 +74,22 @@ all of its dependencies are notified and updated automatically."
  #### Negatives 
  
  # Abstract Factory
- Definition: 
+ Definition: "provides an interface for creating families of related or dependent objects without specifying their concrete classes"
+ 
+ #### What problem does it address?
+ * same as factory method, but we need to create a set of objects instead of just one.
+ 
+ #### What is the solution?
+ Create an abstract factory class that is responsible for creating a set of objects that are needed together
+ 
+ #### Benefits 
+ * Encapsulates the responsibility of creating a set of objects
+ * Concrete factory appears only once in the code 
+ * easily able to modify the use of the factory
+ 
+ #### negatives
+ * adding new objects to create may require the change of the abstract factory class 
+ and all of its subclasses.
+ 
+ 
+ 
