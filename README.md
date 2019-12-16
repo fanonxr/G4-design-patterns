@@ -113,5 +113,22 @@ all of its dependencies are notified and updated automatically."
  * Decorator -> an example of a wrapper pattern
  * proxy -> a layer of giving access to the object
  
+ # Decorator 
+ Definition: "Attaches additional responsibilites to an object dynamically at runtime."
  
+ #### What problem does decorator address?
+ We want to send information to an object without having to rewrite that objects
+ functionality when handling that situation. We want to add the behavior to the object but not the entire class of the object.
+ 
+ #### what is the solution
+ Wrapping those objects in a decorator class at runtime
+ 
+ #### benefits
+ * better way instead of using inheritance
+ 
+ #### negatives
+ * Decorator class and the the class that are being wrapped are not identical. 
+ * Copious amounts of smaller classes are created. 
+ 
+
  
