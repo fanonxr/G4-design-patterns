@@ -234,3 +234,29 @@ all of its dependencies are notified and updated automatically."
   
   #### Similar patterns
   * Facade pattern
+  
+  # State Pattern
+  Definition: "The State Pattern allows an object to alter
+               its behavior when its internal state changes. The object
+               will appear to change its class."
+  
+  #### Whats the problem?
+  The behavior of an object depends on the state the object is in. We need to be able to change to the neccessary behavior
+  when the objects state changes. 
+  
+  instead of have a State variable where if - else conditions change the state.
+  
+  #### Whats the solution?
+  State pattern is used to provide a systematic and lose-coupled way to achieve this through Context and State implementations.
+  
+  #### Benefits
+  * implementing polymorphic behavior are evident, 
+  * and it is also easier to add states to support additional behavior.
+  * and the behavior gets changed at runtime depending on the state. 
+  * easier to add behavior -> make a new state
+  
+  #### Negatives
+  * number of class increase dramatically since a separate state class and sub class handles the changing of states.
+  
+  #### Similar patterns
+  Strategy
