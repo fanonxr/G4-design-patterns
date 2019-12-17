@@ -286,3 +286,21 @@ all of its dependencies are notified and updated automatically."
   
   #### Similar patterns
   * 
+  
+  # Visitor Pattern
+  Definition: ""
+  
+  #### What's the problem visitor address?
+  We need to execute an operation of a group of objects. 
+ 
+  #### Whats the solution? 
+  We move the operation to execute on each object to its separate class
+  
+  #### Benefits
+  * very flexible -> if the logic of the operation changes, we do it on the visitor class instead of the object's class
+  * adding a new item is easy, requires change in the visitor interface
+  
+  #### Negatives 
+  * a lot of forwarding calls 
+  * can be difficult to extend to subclasses if there are too many implementations in the interface
+  * We need to know the type of object the visit() method does
