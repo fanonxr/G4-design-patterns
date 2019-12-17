@@ -260,3 +260,29 @@ all of its dependencies are notified and updated automatically."
   
   #### Similar patterns
   Strategy
+  
+  # Template Pattern
+  Definition:  "defines the
+                skeleton of an algorithm in a method, deferring some steps
+                to subclasses. Template Method lets subclasses redefine
+                certain steps of an algorithm without changing the algorithm’s
+                structure"
+  
+  #### Whats the problem it is addressing? 
+  We need to change a certain part of an algorithm while retaining the rest. 
+  
+  #### What is the solution? 
+  Create a "Template" where we can plug in different functionality. 
+  
+  #### Benefits
+  * Refractoring 
+  * Parent class calls the operation (Hollywood principal)
+  * Lets subclassing implement the behavior 
+  * avoids duplication of code -> code reuse 
+  * Control at what points subclassing is allowed. As opposed to a simple polymorphic override, where the base method would be entirely rewritten allowing radical change to the workflow, only the specific details of the workflow are allowed to change.
+  
+  #### Negatives 
+  * writing many sub classing
+  
+  #### Similar patterns
+  * 
