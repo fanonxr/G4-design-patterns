@@ -208,3 +208,29 @@ all of its dependencies are notified and updated automatically."
   * Decorator 
   * Iterator
   * visitor 
+  
+  # proxy
+  Definition: "Providing a surrogate or placeholder for another object to control access to it."
+  
+  #### What problem does proxy address?
+  We want to control access to a specific object that maybe taking up resources.
+  
+  #### What solution does proxy provide?
+  create a new proxy object that has the same interface as an original service object.
+  Then pass the object to all the original object's clients. The proxy will be in charge of creating the 
+  real service object and delegate the work to it. 
+  
+  #### Benefits
+  * proxy allows you to to execute something either before or after the primary logic of the class, the proxy lets you do this without changing that class. 
+  * Since the proxy implements the same interface as the original class, it can be passed to any client that expects a real service object.
+  * control service without clients know about it (Encapsulating)
+  * security
+  * avoids duplication of objects
+  
+  #### Negatives
+  * response from the service class might get delayed
+  * Code can become more complicated since more classes were made -> could become the facade pattern.
+  * introduces another layer of abstraction
+  
+  #### Similar patterns
+  * Facade pattern
