@@ -303,4 +303,26 @@ all of its dependencies are notified and updated automatically."
   #### Negatives 
   * a lot of forwarding calls 
   * can be difficult to extend to subclasses if there are too many implementations in the interface
-  * We need to know the type of object the visit() method does
+  * We need to know the type of object the visit method does
+  
+  # mediator pattern
+  Definition: "It defines the interface for communication between colleague objects."
+  
+  #### Whats the problem the mediator address
+  We need similar objects to communicate with each other whenever that object wants to send out an update 
+  
+  #### Whats the solution?
+  create one main object that describes/dictates how other objects communicate with one another. 
+  
+  #### benefits
+  * Objects are not coupled to one another
+  * flexible way of handling communication between a group of objects
+  * limits sub-classing
+  
+  #### Negatives
+  * centralizes control -> the mediator class will hold the complexity of handling the interaction
+  * potential to make the mediator a monolith
+  
+  #### Similar patterns 
+  * Facade
+  * Observer
